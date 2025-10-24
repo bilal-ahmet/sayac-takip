@@ -1,33 +1,47 @@
-# Getting Started with Create React App
+# Doğalgaz Sayaç Takip Sistemi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern ve kullanıcı dostu bir doğalgaz sayaç takip uygulaması. Kocaeli ili ve tüm ilçeleri için demo sayaç verileri içerir.
 
-## Available Scripts
+## 🚀 Özellikler
 
-In the project directory, you can run:
+- **Adres Bazlı Filtreleme**: İl, ilçe ve mahalle seçimi
+- **Gerçekçi Sayaç Görseli**: Doğalgaz sayacını andıran tasarım
+- **Aylık Okuma Takibi**: 12 ay boyunca sayaç değerleri
+- **Tüketim Analizi**: Aylık tüketim hesaplama ve detayları
+- **Yıllık Özet**: Toplam ve ortalama tüketim istatistikleri
+- **Responsive Tasarım**: Mobil ve masaüstü uyumlu
 
-### `npm start`
+## 🛠️ Teknolojiler
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 19
+- CSS3 (Gradient & Animations)
+- Modern JavaScript (ES6+)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Kurulum
 
-### `npm test`
+```bash
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🌐 Demo Veriler
 
-### `npm run build`
+- **Şehir**: Kocaeli
+- **İlçeler**: İzmit, Gebze, Derince, Körfez, Gölcük, Karamürsel, Kandıra, Başiskele, Kartepe, Çayırova, Darıca, Dilovası
+- **Toplam Sayaç**: 28 adet
+- **Okuma Periyodu**: Ayda bir (Her ayın 5'i)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📄 Lisans
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Bu proje demo amaçlıdır ve gerçek veriler içermez.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎨 Tasarım
+
+Modern gradient renkler, animasyonlar ve kullanıcı dostu arayüz ile tasarlanmıştır.
+
+---
+
+**Not**: Bu proje Create React App ile oluşturulmuştur ve Vercel üzerinde yayınlanmaya hazırdır.
 
 ### `npm run eject`
 
