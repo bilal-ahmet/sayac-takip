@@ -1,0 +1,235 @@
+.consumption-tracker {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.consumption-tracker h2 {
+  color: #667eea;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.consumption-tracker h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.current-consumption {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.consumption-header h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.consumption-calculation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.calc-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  flex: 1;
+  min-width: 150px;
+}
+
+.calc-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+.calc-value {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.calc-date {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.calc-operator {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.calc-result {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  flex: 1;
+  min-width: 180px;
+}
+
+.result-label {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.result-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.no-consumption {
+  background: #fef3c7;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  border: 2px solid #f59e0b;
+}
+
+.no-consumption p {
+  color: #92400e;
+  font-weight: 600;
+  margin: 0;
+}
+
+.yearly-summary {
+  margin-bottom: 30px;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+}
+
+.summary-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.summary-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.summary-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.consumption-table {
+  margin-top: 30px;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr {
+  transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+  background: #f5f7fa;
+}
+
+tbody tr.highlight {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+  border-left: 4px solid #667eea;
+}
+
+.date-range {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.consumption-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .consumption-calculation {
+    flex-direction: column;
+  }
+
+  .calc-operator {
+    transform: rotate(90deg);
+  }
+
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
